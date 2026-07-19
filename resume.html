@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sunil Tiwari — Resume</title>
+<style>
+  :root {
+    --ink: #1A2433;
+    --ink-soft: #4C5A6E;
+    --ink-faint: #8A94A5;
+    --accent: #8F4F20;
+    --line: #D3D8DE;
+    --paper: #FFFFFF;
+    --font-display: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --font-body: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+    --font-mono: Consolas, "Cascadia Code", "SF Mono", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #E7E9EC; color: var(--ink);
+    font-family: var(--font-body); font-size: 13.5px; line-height: 1.55;
+  }
+  .page {
+    max-width: 800px; margin: 24px auto; background: var(--paper);
+    padding: 46px 56px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+  header.resume-head {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    gap: 20px; border-bottom: 2px solid var(--ink); padding-bottom: 14px; margin-bottom: 22px;
+    flex-wrap: wrap;
+  }
+  h1 { font-family: var(--font-display); font-size: 2rem; margin: 0; letter-spacing: -0.01em; }
+  .role-line { font-family: var(--font-mono); font-size: 0.92rem; color: var(--accent); margin-top: 4px; font-weight: 700; }
+  .contact-block { text-align: right; font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-soft); line-height: 1.7; }
+  .contact-block a { color: var(--ink-soft); text-decoration: none; }
+
+  section { margin-bottom: 22px; }
+  h2 {
+    font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 6px; margin: 0 0 12px;
+  }
+  p.summary { margin: 0; color: var(--ink-soft); }
+  p.summary strong { color: var(--ink); }
+
+  .skills-line { display: flex; flex-wrap: wrap; gap: 8px 10px; font-family: var(--font-mono); font-size: 0.78rem; }
+  .skills-line span { border: 1px solid var(--line); border-radius: 3px; padding: 3px 9px; color: var(--ink-soft); }
+
+  .job { margin-bottom: 18px; page-break-inside: avoid; }
+  .job:last-child { margin-bottom: 0; }
+  .job-top { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .job-title { font-weight: 700; font-size: 0.98rem; }
+  .job-org { color: var(--ink-soft); font-size: 0.9rem; }
+  .job-meta { font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-faint); white-space: nowrap; font-variant-numeric: tabular-nums; text-align: right; }
+  .job-tag {
+    display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 3px;
+    padding: 1px 6px; margin-left: 8px; vertical-align: middle;
+  }
+  ul.job-bullets { margin: 8px 0 0; padding-left: 18px; }
+  ul.job-bullets li { color: var(--ink-soft); margin-bottom: 3px; }
+  .note {
+    font-size: 0.72rem; color: var(--ink-faint); font-style: italic; margin-top: 4px;
+  }
+
+  .edu-cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .placeholder { color: var(--ink-faint); font-style: italic; }
+
+  .verify-box {
+    border: 1px solid var(--line); border-left: 3px solid var(--accent); background: #FAF7F3;
+    padding: 12px 16px; font-size: 0.85rem; color: var(--ink-soft);
+  }
+
+  @media print {
+    body { background: var(--paper); }
+    .page { box-shadow: none; margin: 0; padding: 16mm 18mm; max-width: 100%; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="resume-head">
+    <div>
+      <h1>Sunil Tiwari</h1>
+      <div class="role-line">Senior Software Application Developer</div>
+    </div>
+    <div class="contact-block">
+      <div><a href="mailto:suniltiwari1@gmail.com">suniltiwari1@gmail.com</a></div>
+      <div>+91 90151 51159 · [Add city, India]</div>
+      <div>linkedin.com/in/sunil-tiwari-dotnet · github.com/suniltiwari</div>
+      <div>Notice Period: 1 Month</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary">Software Application Developer with <strong>15+ years of experience</strong> designing, developing, and maintaining enterprise web applications using <strong>ASP.NET Web Forms, ASP.NET, C#, and SQL Server</strong>. Background spans long-term full-time enterprise roles as well as an independent freelance engagement managing complete client projects end-to-end. Strong focus on SQL Server performance tuning, REST API integration, and IIS deployment — recently reduced a core reporting query's execution time from 8 seconds to 300 milliseconds.</p>
+  </section>
+
+  <section>
+    <h2>Core Skills</h2>
+    <div class="skills-line">
+      <span>C#</span><span>ASP.NET Web Forms</span><span>ASP.NET</span><span>SQL Server / T-SQL</span>
+      <span>ADO.NET</span><span>REST API</span><span>IIS Deployment</span><span>JavaScript</span>
+      <span>Bootstrap</span><span>HTML/CSS</span><span>Git</span><span>Client Requirement Analysis</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Senior Software Engineer</span> — <span class="job-org">Southall Travel Limited (Onkar Infotech), Gurgaon</span></div>
+        <div class="job-meta">Jul 2021 – Present<br>5 Yrs 1 Mo · Full-time</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Develop and maintain enterprise web applications built on C#, ASP.NET, and SQL Server.</li>
+        <li>Collaborate with cross-functional teams to gather requirements and deliver features on schedule.</li>
+        <li>Troubleshoot and resolve production issues, ensuring application stability and performance.</li>
+      </ul>
+      <div class="note">Add 1–2 specifics here (product name, team size, a measurable result) once confirmed.</div>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Dot Net Developer</span> — <span class="job-org">Freelance / Independent Contractor (Remote)</span><span class="job-tag">Freelance</span></div>
+        <div class="job-meta">2019 – 2021<br>2 Yrs</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Independently managed the full project lifecycle for a remote client, from requirement gathering through deployment.</li>
+        <li>Worked directly with client stakeholders to translate business requirements into functional ASP.NET/C# applications.</li>
+        <li>Delivered and supported the solution single-handedly across the full stack — C#, SQL Server, and JavaScript.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Senior Dotnet Developer</span> — <span class="job-org">Southall Travel Limited (Onkar Infotech), Gurgaon</span></div>
+        <div class="job-meta">Jul 2015 – Jul 2019<br>4 Yrs 1 Mo · Full-time</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Developed, implemented, and supported software, web pages, and web applications using Microsoft .NET technologies.</li>
+        <li>Built and maintained SQL Server-backed data layers for enterprise applications.</li>
+        <li>Supported the full development lifecycle from design through deployment and ongoing maintenance.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Software Engineer</span> — <span class="job-org">Million Minds Management Services Ltd, Gurugram</span></div>
+        <div class="job-meta">2013 – 2015<br>2 Yrs · Full-time</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Developed, implemented, and supported software, web pages, and web applications using Microsoft .NET technologies.</li>
+        <li>Contributed to internal tools supporting logistics and courier operations.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Dotnet Developer</span> — <span class="job-org">Softspark Technologies, Gurugram</span></div>
+        <div class="job-meta">Jul 2010 – Jul 2013<br>3 Yrs 1 Mo · Full-time</div>
+      </div>
+      <ul class="job-bullets">
+        <li>Worked as a software developer and web developer, building ASP.NET-based web applications.</li>
+        <li>Built foundational expertise in C#, SQL Server, and web development practices early in career.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="edu-cert-grid">
+      <div>
+        <h2>Education</h2>
+        <p class="placeholder">[Add degree, institution, year — e.g., B.Tech in Computer Science, XYZ University, 2009]</p>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <p class="placeholder">[Add any certifications, e.g., Microsoft Certified: Azure Fundamentals]</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-bottom:0;">
+    <h2>Background Verification</h2>
+    <div class="verify-box">All employment details listed above are accurate and available for verification through official HR records. Open to background verification checks as required by the employer.</div>
+  </section>
+
+</div>
+</body>
+</html>
