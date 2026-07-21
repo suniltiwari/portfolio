@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #0B121B;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-image:
+      repeating-linear-gradient(to bottom, transparent, transparent 39px, #1c2836 40px),
+      repeating-linear-gradient(to right, transparent, transparent 39px, #1c2836 40px);
+    background-size: 40px 40px;
+  }
+  .wrap { padding: 90px 100px; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+  .mono { font-family: Consolas, "Cascadia Code", monospace; }
+  .status {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 22px; color: #97A3B4; border: 1px solid #212E3D; border-radius: 999px;
+    padding: 8px 20px 8px 14px; width: fit-content; margin-bottom: 36px; background: #121B27;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: #56B37B; }
+  h1 {
+    font-family: Georgia, serif; font-size: 96px; color: #E7ECF2; line-height: 1; letter-spacing: -0.01em;
+  }
+  .role {
+    margin-top: 22px; font-size: 34px; color: #E3963D; font-family: Consolas, monospace;
+  }
+  .tags { margin-top: 46px; display: flex; gap: 16px; }
+  .tag {
+    font-family: Consolas, monospace; font-size: 22px; color: #97A3B4;
+    border: 1px solid #212E3D; border-radius: 999px; padding: 8px 22px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="status"><span class="dot"></span> Available for new projects — remote / WFH</span>
+    <h1>Sunil Tiwari</h1>
+    <div class="role">Freelance ASP.NET &amp; SQL Server Developer</div>
+    <div class="tags">
+      <span class="tag">C#</span>
+      <span class="tag">ASP.NET</span>
+      <span class="tag">SQL Server</span>
+      <span class="tag">REST API</span>
+      <span class="tag">15+ Years</span>
+    </div>
+  </div>
+</body>
+</html>
