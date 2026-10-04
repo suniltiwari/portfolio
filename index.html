@@ -354,6 +354,25 @@
     .stat:last-child { border-bottom: none; }
     .process-row { grid-template-columns: 1fr; gap: 6px; }
   }
+  /* ============ ToolkitBee promo ============ */
+  section#promo { padding: 28px 0; }
+  .promo {
+    display: flex; align-items: center; gap: 20px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+  }
+  .promo-icon { font-size: 34px; line-height: 1; flex-shrink: 0; }
+  .promo-body { flex: 1; min-width: 0; }
+  .promo-body .eyebrow { display: block; margin-bottom: 4px; }
+  .promo-title { margin: 0 0 4px; font-family: var(--font-display); font-size: 20px; font-weight: 400; }
+  .promo-text { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
+  .promo .btn { flex-shrink: 0; }
+  @media (max-width: 640px) {
+    .promo { flex-direction: column; align-items: flex-start; gap: 12px; }
+  }
 </style>
 </head>
 <body>
@@ -407,6 +426,20 @@
           <div class="stat-num">24h</div>
           <div class="stat-label">Response Time</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="promo" aria-label="Advertisement">
+    <div class="wrap">
+      <div class="promo">
+        <span class="promo-icon" aria-hidden="true">🐝</span>
+        <div class="promo-body">
+          <span class="eyebrow">Ad · My other site</span>
+          <h3 class="promo-title">ToolkitBee — free online tools</h3>
+          <p class="promo-text">EMI, GST, SIP &amp; income tax calculators, image compressor, QR code generator, merge PDF, JSON formatter and more — in English and Hindi. No sign-up, runs in your browser.</p>
+        </div>
+        <a class="btn btn-primary" href="https://toolkitbee.com/?utm_source=portfolio&amp;utm_medium=banner" target="_blank" rel="noopener">Visit ToolkitBee →</a>
       </div>
     </div>
   </section>
